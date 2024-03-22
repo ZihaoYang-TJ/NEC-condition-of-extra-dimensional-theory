@@ -5,10 +5,10 @@ We use k=6, which is 10-dimensional space-time. The current change of Newton's c
 
 When we consider the CPL model：
 ode.m
-You can use ode.m to check the NEC violation for all points in the w0wa plane in 10-dimensional spacetime.
-Select the point you want to check and just modify the values of w0 and wa in the first line of code.
+You can use `ode.m` to check the NEC violation for all points in the $w_0w_a$ plane in 10-dimensional spacetime.
+Select the point you want to check and just modify the values of $w_0$ and wa in the first line of code.
 
 checkallpoints.m
-Here you can directly inspect and observe the NEC compliant areas on the w0wa plane. You just need to adjust the range in the first line of code. By the way, if the range is too large, the dark energy density is no longer approximately $0.7$
+Here you can directly inspect and observe the NEC compliant areas on the $w_0w_a$ plane. You just need to adjust the range in the first line of code. By the way, if the range is too large, the dark energy density is no longer approximately $0.7$
 
-loding
+loading.....
