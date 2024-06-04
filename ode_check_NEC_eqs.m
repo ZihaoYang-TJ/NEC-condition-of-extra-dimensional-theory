@@ -8,7 +8,7 @@ w=(w0+wa*(1-exp(N))).*O;
 
 a=exp(t);
 p1=plot(a-1,y,'b',LineWidth=2);
-xlabel('a','FontSize', 12);ylabel('\zeta','FontSize', 12)
+xlabel('a','FontSize', 12);ylabel('$\zeta$','FontSize', 12,'interpreter','latex')
 yticks([-4 -2 0 2 4])
 xticks([0 0.5 1 1.5 2])
 hold on
@@ -36,17 +36,9 @@ set(gca,'YAxisLocation','origin')
 
 
 
-legend([p1,p3],{'w_0=-1 w_a=0','\pm F'},'FontSize', 12)
+legend([p1,p3],{'$w_0=-1\quad w_a=0$','$\pm F$'},'FontSize', 12,'interpreter','latex')
 xticks([-1  1])
 xticklabels({'0','2'})
 
 box off
 legend boxoff;
-
-
-
-
-function dydt = myode(t,y,N,w)
-w = interp1(N,w,t); % Interpolate the data set (ft,f) at time t
-dydt = y^2+3*(w-1)/2*y-9/4*(1+3*w); % Evaluate ODE at time t
-end
